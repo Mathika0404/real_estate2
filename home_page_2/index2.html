@@ -1,0 +1,639 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+      <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <title>
+      Real &mdash; Estate
+    </title>
+  </head>
+    <style>
+    body {
+      font-family: "Work Sans", sans-serif;
+      background: #f8f9fa;
+    }
+
+/* Updated Blog Section Classes */
+.estate-blog-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.estate-blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.estate-blog-img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+.estate-blog-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+.estate-blog-title:hover {
+  color: #005555;
+}
+.estate-blog-desc {
+  font-size: 15px;
+  color: #555;
+}
+
+
+    /* Read More Button */
+    .read-more {
+      color: #005555;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="site-nav">
+      <div class="container-fluid p-0">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index2.html" class="logo m-0 float-start">
+  <img src="images/stackly_logo.webp" alt="Property Logo" style="height:40px;">
+</a>
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+<li class="has-children">
+  <a href="index2.html" class="active">Home</a>
+  <ul class="dropdown">
+    <li><a href="../index.html">Home Page 1</a></li>
+  </ul>
+</li>
+<li><a href="services.html">Services</a></li>
+<li><a href="blogs.html">Blogs</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar">
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--NAV END-->
+
+          <!--HERO SECTION-->
+        <div class="hero">
+      <div class="hero-slide">
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_3.webp')"
+        ></div>
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_2.webp')"
+        ></div>
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_1.webp')"
+        ></div>
+      </div>
+
+            <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center">
+            <h1 class="heading"  style="font-style: italic;" data-aos="fade-up">
+Your perfect home is closer than you think <br> let’s open the door to your future
+            </h1>
+            <form
+              action="#"
+              id="citySearchForm"
+              class="narrow-w form-search d-flex align-items-stretch mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SERVICE SECTION-->
+
+        <div class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <h1>Our Services</h1>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="box-feature mb-4">
+              <span class="flaticon-house mb-4 d-block"></span>
+              <h3 class="text-black mb-3 font-weight-bold">
+                Quality Properties
+              </h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="box-feature mb-4">
+              <span class="flaticon-house-2 mb-4 d-block-3"></span>
+              <h3 class="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="box-feature mb-4">
+              <span class="flaticon-building mb-4 d-block"></span>
+              <h3 class="text-black mb-3 font-weight-bold">
+                Property for Sale
+              </h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="box-feature mb-4">
+              <span class="flaticon-house-3 mb-4 d-block-1"></span>
+              <h3 class="text-black mb-3 font-weight-bold">House for Sale</h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="box-feature mb-4">
+              <span class="flaticon-house-4 mb-4 d-block"></span>
+              <h3 class="text-black mb-3 font-weight-bold">
+                Quality Properties
+              </h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="box-feature mb-4">
+              <span class="flaticon-building mb-4 d-block-3"></span>
+              <h3 class="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="box-feature mb-4">
+              <span class="flaticon-house mb-4 d-block"></span>
+              <h3 class="text-black mb-3 font-weight-bold">
+                Property for Sale
+              </h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="box-feature mb-4">
+              <span class="flaticon-house-1 mb-4 d-block-1"></span>
+              <h3 class="text-black mb-3 font-weight-bold">House for Sale</h3>
+              <p class="text-black-50">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="404.html" class="learn-more">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- BLOG SECTION -->
+<div class="section bg-light">
+  <div class="container">
+    <!-- <h1 class="text-center mb-5">Our Blogs</h1> -->
+
+    <div class="row g-4">
+       <div class="row">
+          <h1>Our Blogs</h1>
+
+      <!-- Blog 1 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+        <div class="estate-blog-card">
+          <img src="images/img_1.webp" class="estate-blog-img" alt="Luxury Homes">
+          <div class="p-4">
+            <h5 class="estate-blog-title">Top 10 Luxury Homes to Look For in 2025</h5>
+            <p class="estate-blog-desc">Explore the finest modern homes with premium amenities, trending architectural styles, and top investment locations.</p>
+            <p><a href="404.html" class="learn-more">Read more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="estate-blog-card">
+          <img src="images/img_2.webp" class="estate-blog-img" alt="Home Buying Tips">
+          <div class="p-4">
+            <h5 class="estate-blog-title">First-Time Home Buyer? Here’s What You Need to Know</h5>
+            <p class="estate-blog-desc">A complete guide for first-time buyers: loans, documents, hidden charges, and location selection tips.</p>
+            <p><a href="404.html" class="learn-more">Read more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="estate-blog-card">
+          <img src="images/img_3.webp" class="estate-blog-img" alt="Investment">
+          <div class="p-4">
+            <h5 class="estate-blog-title">Why Real Estate Remains the Best Investment in 2025</h5>
+            <p class="estate-blog-desc">Property values rise yearly. Learn why real estate remains a stable long-term investment compared to stocks.</p>
+            <p><a href="404.html" class="learn-more">Read more</a></p>
+          </div>
+        </div>
+      </div>
+       </div>
+    </div>
+  </div>
+
+
+      <div class="section bg-light">
+  <div class="container">
+    <!-- <h1 class="text-center mb-5">Our Blogs</h1> -->
+
+    <div class="row g-4">
+      <!-- Blog 4 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+        <div class="estate-blog-card">
+          <img src="images/img_4.webp" class="estate-blog-img" alt="Interior Design">
+          <div class="p-4">
+            <h5 class="estate-blog-title">Modern Interior Design Trends for 2025</h5>
+            <p class="estate-blog-desc">Discover upcoming interior design trends including minimalism, smart homes, and space-saving furniture.</p>
+            <p><a href="404.html" class="learn-more">Read more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 5 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="estate-blog-card">
+          <img src="images/img_5.webp" class="estate-blog-img" alt="Vastu Tips">
+          <div class="p-4">
+            <h5 class="estate-blog-title">Vastu Shastra Tips to Bring Positive Energy</h5>
+            <p class="estate-blog-desc">Want peace & success? Follow these simple and effective Vastu tips while selecting or designing your home.</p>
+            <p><a href="404.html" class="learn-more">Read more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 6 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
+        <div class="estate-blog-card">
+          <img src="images/img_6.webp" class="estate-blog-img" alt="Construction">
+          <div class="p-4">
+            <h5 class="estate-blog-title">Construction Costs Breakdown (2025 Guide)</h5>
+            <p class="estate-blog-desc">Understand cost per sq.ft, materials pricing, labor charges, and how to reduce total construction expenses.</p>
+            <p><a href="404.html" class="learn-more">Read more</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="text-center mt-4">
+      <p><a href="blogs.html" class="learn-more">See All Blogs →</a></p>
+    </div>
+
+  </div>
+</div>
+
+    <!--CONTACT SECTION-->
+      <div class="section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+          <div class="col-12">
+            <h2 class="font-weight-bold heading text-primary mb-4">Contact Us</h2>
+          </div>
+            <div class="contact-info">
+              <div class="address mt-2">
+                <i class="icon-room"></i>
+                <h4 class="mb-2">Location:</h4>
+                <p>
+                  3210 Street, Chennai,<br />
+                  Tamilnadu
+                </p>
+              </div>
+
+              <div class="open-hours mt-4">
+                <i class="icon-clock-o"></i>
+                <h4 class="mb-2">Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br />
+                  9:00 AM - 10:00 PM
+                </p>
+              </div>
+
+              <div class="email mt-4">
+                <i class="icon-envelope"></i>
+                <h4 class="mb-2">Email:</h4>
+                <p>info@stackly.com</p>
+              </div>
+
+              <div class="phone mt-4">
+                <i class="icon-phone"></i>
+                <h4 class="mb-2">Call:</h4>
+                <p>+91 9876543210, <br>
+                +91 9047366578</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <form action="404.html">
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name" required 
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email" required 
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject" required 
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="7"
+                    class="form-control"
+                    placeholder="Message" required 
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <input
+                    type="submit" 
+                    value="Send Message"
+                    class="btn btn-primary" 
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- FOOTER SECTION -->
+<div class="site-footer">
+  <div class="container">
+    <div class="row">
+    <div class="row text-center text-md-start">
+      <!-- Contact -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Contact</h3>
+          <address>3210 Street, Chennai, Tamilnadu</address>
+          <ul class="list-unstyled links">
+            <li><a href="#">+91 9876543210</a></li>
+            <li><a href="#">+91 9047366578</a></li>
+            <li><a href="#">info@thestackly.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sources -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Sources</h3>
+          <ul class="list-unstyled links">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Company</h3>
+          <ul class="list-unstyled links">
+            <li><a href="404.html">Partners</a></li>
+            <li><a href="404.html">Business</a></li>
+            <li><a href="404.html">Careers</a></li>
+            <li><a href="404.html">Blog</a></li>
+            <li><a href="404.html">FAQ</a></li>
+            <li><a href="404.html">Creative</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Links</h3>
+          <ul class="list-unstyled links">
+            <li><a href="404.html">Our Vision</a></li>
+            <li><a href="404.html">About us</a></li>
+            <li><a href="404.html">Contact us</a></li>
+          </ul>
+          <ul class="list-unstyled social">
+            <li><a href="404.html"><span class="icon-instagram"></span></a></li>
+            <li><a href="404.html"><span class="icon-twitter"></span></a></li>
+            <li><a href="404.html"><span class="icon-facebook"></span></a></li>
+            <li><a href="404.html"><span class="icon-linkedin"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-12 col-md-2 mx-auto mb-4">
+        <div class="widget">
+          <h3>Google Map</h3>
+          <div class="footer-map mt-3">
+            <iframe
+              width="150"
+              height="150"
+              style="border:0; border-radius:8px;"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31096.299901780897!2d80.2209663!3d13.0826802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265d24b5c7587%3A0x7a667c4b108a52d!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <p>
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script>
+          . All Rights Reserved.
+        </p>
+        <div>
+          Distributed by <a href="https://stackly.com/" target="_blank">stackly</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+      <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Init -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      offset: 120,
+    });
+
+      document.querySelector("form").addEventListener("submit", function (e) {
+    let valid = true;
+
+    // Get fields
+    const name = document.querySelector('input[placeholder="Your Name"]');
+    const email = document.querySelector('input[placeholder="Your Email"]');
+    const subject = document.querySelector('input[placeholder="Subject"]');
+    const message = document.querySelector("textarea");
+
+    // Clear old errors
+    document.querySelectorAll(".error").forEach(el => el.remove());
+
+    // Function to show error
+    function showError(input, message) {
+      const error = document.createElement("div");
+      error.className = "error text-danger mt-1";
+      error.innerText = message;
+      input.after(error);
+      valid = false;
+    }
+
+    // Validation rules
+    if (name.value.trim() === "") showError(name, "Name is required");
+    if (email.value.trim() === "") showError(email, "Email is required");
+    if (subject.value.trim() === "") showError(subject, "Subject is required");
+    if (message.value.trim() === "") showError(message, "Message cannot be empty");
+
+    if (!valid) e.preventDefault();
+  });
+  </script>
+  </body>
+</html>
+
