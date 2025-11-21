@@ -57,22 +57,22 @@
         <div class="menu-bg-wrap">
           <div class="site-navigation">
             <a href="index.html" class="logo m-0 float-start">
-  <img src="images/stackly_logo.webp" alt="Property Logo" style="height:40px;">
+  <img src="images/stackly_logo.webp" tabindex="0" alt="Property Logo" style="height:40px;">
 </a>
 
             <ul
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
 <li class="has-children">
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html" class="active" tabindex="0">Home</a>
   <ul class="dropdown">
-    <li><a href="./home_page_2/index2.html">Home Page 2</a></li>
+    <li><a href="./home_page_2/index2.html" tabindex="0">Home Page 2</a></li>
   </ul>
 </li>
-<li><a href="about.html">About</a></li>
-<li><a href="properties.html">Properties</a></li>
-<li><a href="contact.html">Contact Us</a></li>
-              <li><a href="dashboard.html">Dashboard</a></li>
-              <li><a href="login.html">Login</a></li>
+<li><a href="about.html" tabindex="0">About</a></li>
+<li><a href="properties.html" tabindex="0">Properties</a></li>
+<li><a href="contact.html" tabindex="0">Contact Us</a></li>
+              <li><a href="dashboard.html" tabindex="0">Dashboard</a></li>
+              <li><a href="login.html" tabindex="0">Login</a></li>
             </ul>
             <a
               href="#"
@@ -480,6 +480,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -514,6 +515,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -548,6 +550,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -582,6 +585,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -616,6 +620,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -649,6 +654,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -683,6 +689,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -717,6 +724,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -751,6 +759,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -785,6 +794,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -819,6 +829,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -853,6 +864,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -887,6 +899,7 @@ let’s turn <br>the key to your happiness
 
                       <a
                         href="404.html"
+                        tabindex="0"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
                       >
@@ -899,21 +912,20 @@ let’s turn <br>the key to your happiness
               <div
                 id="property-nav"
                 class="controls"
-                tabindex="0"
                 aria-label="Carousel Navigation"
               >
                 <span
                   class="prev"
+                  tabindex="0"
                   data-controls="prev"
                   aria-controls="property"
-                  tabindex="-1"
                   >Prev</span
                 >
                 <span
                   class="next"
+                  tabindex="0"
                   data-controls="next"
                   aria-controls="property"
-                  tabindex="-1"
                   >Next</span
                 >
               </div>
@@ -1007,6 +1019,7 @@ let’s turn <br>the key to your happiness
                 <div class="col-12">
                   <input
                     type="submit" 
+                    tabindex="0"
                     value="Send Message"
                     class="btn btn-primary" 
                   />
@@ -1166,6 +1179,15 @@ let’s turn <br>the key to your happiness
 
     if (!valid) e.preventDefault();
   });
+
+  document.addEventListener("keydown", function (e) {
+  if ((e.key === "Enter" || e.key === " ") && document.activeElement) {
+    if (document.activeElement.click) {
+      document.activeElement.click();
+    }
+  }
+});
+
 </script>
 
   </body>

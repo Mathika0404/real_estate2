@@ -10400,3 +10400,19 @@ nav[aria-label="breadcrumb"] li:before {
       .site-footer .social li a:hover {
         background: #00204a;
         color: #fff; }
+
+/* --- FIXED: Only affect tiny-slider cloned slides --- */
+.tns-slide-cloned,
+.tns-item[aria-hidden="true"] {
+    pointer-events: none !important;
+    visibility: hidden !important;
+}
+
+
+/* But DO NOT hide children completely — KEEP THEM VISIBLE WHEN ACTIVE */
+.site-mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
