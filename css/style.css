@@ -1,18 +1,3 @@
-/*
-* Template Name: Property
-* Template Author: Untree.co
-* Template License: https://creativecommons.org/licenses/by/3.0/
-* Author URI: https://untree.co/
-
-* Twitter: https://twitter.com/Untree_co
-* Facebook: https://web.facebook.com/Untree.co/
-*/
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -87,6 +72,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 
 hr {
   margin: 1rem 0;
@@ -9677,7 +9663,9 @@ textarea {
   background-size: cover;
   background-position: cnter center;
   background-repeat: no-repeat;
-  background-color: #00204a; }
+   }
+
+   
   .hero.overlay {
     position: relative; }
     .hero.overlay:before {
@@ -9756,6 +9744,7 @@ textarea {
         z-index: 1;
         background: rgba(34, 34, 34, 0.4); }
 
+        
 .section {
   padding-top: 4rem;
   padding-bottom: 4rem; }
@@ -10212,7 +10201,9 @@ textarea {
     font-size: 16px; }
 
 .testimonial-slider-wrap {
-  position: relative; }
+  position: relative;
+overflow: hidden; 
+ }
   .testimonial-slider-wrap .tns-nav {
     position: absolute;
     bottom: -50px;
@@ -10242,6 +10233,9 @@ textarea {
       .testimonial-slider-wrap .tns-nav button.tns-nav-active:before {
         background-color: #00204a; }
 
+        
+
+
 #testimonial-nav span {
   display: inline-block;
   cursor: pointer;
@@ -10256,6 +10250,19 @@ textarea {
   #testimonial-nav span:hover, #testimonial-nav span.active {
     background: #00204a;
     color: #fff !important; }
+
+.property-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s ease;
+  transform-origin: center center;
+}
+
+/* Hover zoom */
+.property-item:hover img {
+  transform: scale(1.10);
+}
+
 
 .custom-mb {
   margin-bottom: 80px; }
