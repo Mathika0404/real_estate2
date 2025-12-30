@@ -90,6 +90,150 @@
       color: #333;
       margin-bottom: 20px;
     }
+    
+    .box-feature {
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: serviceFloat 4s ease-in-out infinite;
+}
+
+.col-lg-3:nth-child(1) .box-feature { animation-delay: 0s; }
+.col-lg-3:nth-child(2) .box-feature { animation-delay: .3s; }
+.col-lg-3:nth-child(3) .box-feature { animation-delay: .6s; }
+.col-lg-3:nth-child(4) .box-feature { animation-delay: .9s; }
+.col-lg-3:nth-child(5) .box-feature { animation-delay: 1.2s; }
+.col-lg-3:nth-child(6) .box-feature { animation-delay: 1.5s; }
+.col-lg-3:nth-child(7) .box-feature { animation-delay: 1.8s; }
+.col-lg-3:nth-child(8) .box-feature { animation-delay: 2.1s; }
+
+@keyframes serviceFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.box-feature:hover {
+  transform: translateY(-14px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+.box-feature span[class^="flaticon"] {
+  display: inline-block;
+  font-size: 40px;
+  animation: iconPulse 1s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+.learn-more {
+  position: relative;
+  text-decoration: none;
+}
+
+.learn-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #005555;
+  transition: width 0.3s ease;
+}
+
+.box-feature:hover .learn-more::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .box-feature {
+    animation: none;
+  }
+}
+
+.estate-blog-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden; /* IMPORTANT for image zoom */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.estate-blog-card:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.estate-blog-img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s ease;
+  transform-origin: center;
+}
+
+.estate-blog-card:hover .estate-blog-img {
+  transform: scale(1.12);
+}
+
+.estate-blog-title {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.estate-blog-card:hover .estate-blog-title {
+  transform: translateY(-4px);
+  color: #005555; /* optional brand color */
+}
+
+.estate-blog-desc {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.estate-blog-card:hover .estate-blog-desc {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+.learn-more {
+  position: relative;
+  text-decoration: none;
+}
+
+.learn-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #005555;
+  transition: width 0.3s ease;
+}
+
+.estate-blog-card:hover .learn-more::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .estate-blog-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .estate-blog-card:hover .estate-blog-img {
+    transform: none;
+  }
+}
+
+
   </style>
   <body>
     <div class="site-mobile-menu site-navbar-target">
